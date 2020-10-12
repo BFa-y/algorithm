@@ -13,14 +13,20 @@ points.sort((a, b) => b - a); // 100,40,25,10,5,1
 
 //字符串数组排序 利率-金额-时间
 var finlists = [
-    { PLAN_INCOME: "5.23%", MIN_NUM: "222", Date: "20210608" },
-    { PLAN_INCOME: "6.23%", MIN_NUM: "555", Date: "20210608" },
-    { PLAN_INCOME: "5.29%", MIN_NUM: "333", Date: "20210608" }
+    { rate: "5.23%", MIN_NUM: "222", Date: "20210608" },
+    { rate: "6.23%", MIN_NUM: "555", Date: "20210608" },
+    { rate: "5.29%", MIN_NUM: "333", Date: "20210608" }
 ]
 finlists.sort((a, b) => a.MIN_NUM - b.MIN_NUM)
 // JSON.stringify(finlists)  
 [
-    { PLAN_INCOME: "5.23%", MIN_NUM: "222", Date: "20210608" },
-    { PLAN_INCOME: "5.29%", MIN_NUM: "333", Date: "20210608" },
-    { PLAN_INCOME: "6.23%", MIN_NUM: "555", Date: "20210608" }  
+    { rate: "5.23%", MIN_NUM: "222", Date: "20210608" },
+    { rate: "5.29%", MIN_NUM: "333", Date: "20210608" },
+    { rate: "6.23%", MIN_NUM: "555", Date: "20210608" }  
 ]
+//*率格式化-排序-%替换空格
+format(s){
+	return s.replace(/%/g,"");
+}
+finlists.sort((a, b) => this.format(a.rate) - this.format(b.rate))
+//成功
