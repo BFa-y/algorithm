@@ -10,3 +10,8 @@
 const reg = new RegExp('[0-9a-z]', 'g')
 const str = "123456abcde"
 console.log(str.match(reg))
+
+// 匹配特殊字符本身时需要转义，共有以下几个：
+
+// * . ? + $ ^ [ ] ( ) { } | \ /
+const reg1 = /\//
