@@ -1,17 +1,12 @@
-// 正则表达式-描述文本内容组成规律的表达方式-简化文本处理逻辑
+const http = require('http')
 
-// 常用匹配字符	含义
-// [0-9]  匹配单个数字0-9
-// [a-z]  匹配单个小写字母
-// [A-Z]  匹配单个大写字母
-//  \s	  匹配所有空白字符，如空格、换行等
-//  \n	  匹配所有换行符
-//  \b	  匹配边界如字符之间的空格
-const reg = new RegExp('[0-9a-z]', 'g')
-const str = "123456abcde"
-console.log(str.match(reg))
+const server = http.createServer()
 
-// 匹配特殊字符本身时需要转义，共有以下几个：
+server.on('request', function(req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'})
+  res.end('Hello World\n');
+})
 
-// * . ? + $ ^ [ ] ( ) { } | \ /
-const reg1 = /\//
+server.listen(3000)
+
+console.log('Server Running at http://localhost:3000')
