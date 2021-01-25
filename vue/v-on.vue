@@ -9,6 +9,11 @@
 
 <!-- 方法处理器 -->
 <button v-on:click="doThis"></button>
+<!-- $event -->
+<div v-on:click="handle('ok', $event.type, $event.target)">确定</div>
+handle(a,b){
+   console.log(a,b) // ok, MouseEvent{....} click, <div>确定</div>
+}
 
 <!-- 缩写 -->
 <button @click="doThis"></button>
