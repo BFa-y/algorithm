@@ -1,0 +1,9 @@
+/* var() 函数- 	用于插入自定义的属性值 */
+#pages-xxxx{
+    --font-size:16px;
+    --xxxx:#DE4B5D;
+}
+.div{
+    font-size: var(--font-size);
+    color: var(--xxxx);
+}
