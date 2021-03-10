@@ -8,7 +8,7 @@
     color: var(--xxxx);
 }
 /* cubic-bezier()函数- 	定义贝塞尔曲线，常用于动画效果 */
-css3 @keyframes规则：创建动画-实现0%-100%动画效果
+/* css3 @keyframes规则：创建动画-实现0%-100%动画效果 */
 @keyframes animX{
     0% {left: 0px;}
     100% {left: 200px;}
@@ -17,11 +17,10 @@ css3 @keyframes规则：创建动画-实现0%-100%动画效果
     0% {top: 0px;}
     100% {top: 200px;}
 }
-animation属性：
+/* animation属性： 
 animation: name duration timing-function delay iteration-count direction fill-mode play-state;
-/* -- */
 animation-timing-function 属性：动画完成周期方式
 linear:匀速，ease:，慢-快-慢，ease-in:低速开始，ease-out:低速结束，ease-in-out:低速开始和结束，cubic-bezier(n,n,n,n)：贝塞尔曲线
-/* -- */
 animation: animX 4s cubic-bezier(0.36,0,0.64,1) -2s infinite alternate, 
-           animY 4s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate;
+           animY 4s cubic-bezier(0.36,0,0.64,1)  0s infinite alternate; 
+*/
