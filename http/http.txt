@@ -1,9 +1,9 @@
 http请求方式：
-OPTIONS  HTTP 请求 OPTIONS 	
-GET 	 HTTP 请求 GET 	
-HEAD 	 HTTP 请求 HEAD 	
-POST 	 HTTP 请求 POST 	
-PUT 	 HTTP 请求 PUT 	
-DELETE 	 HTTP 请求 DELETE 	
-TRACE 	 HTTP 请求 TRACE 	
-CONNECT  HTTP 请求 CONNECT
+GET 	 HTTP 请求 GET 	   获取资源
+POST 	 HTTP 请求 POST    传输实体主体
+PUT 	 HTTP 请求 PUT     传输文件
+HEAD 	 HTTP 请求 HEAD    获得报文首部
+DELETE 	 HTTP 请求 DELETE  删除文件
+OPTIONS  HTTP 请求 OPTIONS 询问支持的方法		
+TRACE 	 HTTP 请求 TRACE   追踪路径		
+CONNECT  HTTP 请求 CONNECT 要求用隧道协议连接代理
