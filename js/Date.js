@@ -18,20 +18,20 @@ var bb = "5"
 
 // 获取当前日期
 // var dateStart = date.getFullYear() + '-' + (date.getMonth() - 3) + '-' + date.getDate()
-// var year = "" + date.getFullYear()
-// var month = "" + (date.getMonth() +1)
-// var todays = "" + date.getDate()
-// if (month.length == 1) {
-//     month = "0" + month
-// }
-// if (todays.length == 1) {
-//     todays = "0" + todays
-// }
-// var dateStart = year + month + todays
+var year = "" + date.getFullYear()
+var month = "" + (date.getMonth() +1)
+var todays = "" + date.getDate()
+if (month.length == 1) {
+    month = "0" + month
+}
+if (todays.length == 1) {
+    todays = "0" + todays
+}
+var dateStart = year + month + todays
+console.log(dateStart)  //20200101 -八位时间格式
 // console.log(typeof(todays))
 // console.log(month)
 // console.log(todays)
-// console.log(dateStart)
 
 var aaa ="5266**** ****5856|4546546tr46y4t6j46t4j"
 var bbb =aaa.indexOf("(|))
