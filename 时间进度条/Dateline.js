@@ -31,10 +31,10 @@
 </div>
 <div style="height: 100px"></div>
   <x-view class="button-sp-area">
-    <x-button type="primary" @click.native="AAAA">下一步</x-button>
+    <x-button type="primary" @click.native="myFunction()">下一步</x-button>
   </x-view>
 </x-view>
-AAAA(){
+function myFunction(){
     // 获取当前时间
     let myDate = new Date();
     let y = myDate.getFullYear();
@@ -76,8 +76,8 @@ AAAA(){
       console.log("打印信息3")
       let aLength = parseInt((nowTime - QG) / 100000) / parseInt((JZ - QG) / 100000) * 100 + "%"
       let b_aLength = $Fw.getEl(".time-p-line-yellow1")
+      // 使用百分比定义css width
       b_aLength.style.width = aLength;
-      console.log("打印：", aLength, b_a.style.backgroundColor)
     }
     /**
      * 当前时间大于等于时间B小于时间C
@@ -92,6 +92,7 @@ AAAA(){
       b_cLength1.style.width = bLength1
       let bLength2 = parseInt((nowTime - JZ) / 100000) / parseInt((DQ - JZ) / 100000) * 100 + "%"
       let b_cLength2 = $Fw.getEl(".time-p-line-yellow2")
+      // 使用百分比定义css width
       b_cLength2.style.width = bLength2;
     }
     else {
@@ -112,4 +113,4 @@ AAAA(){
  代码执行报错问题
   */
  Cannot read property 'style' of null at error
- 先执行的script，html还没渲染，导致style为空，手动触发先执行html
+ 先执行的script，html还没渲染，导致style为空，手动触发，先执行html
