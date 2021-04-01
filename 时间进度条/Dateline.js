@@ -112,4 +112,4 @@ AAAA(){
  代码执行报错问题
   */
  Cannot read property 'style' of null at error
- 先执行的script，html还没渲染，导致style为空，手动触发线 执行html
+ 先执行的script，html还没渲染，导致style为空，手动触发先执行html
