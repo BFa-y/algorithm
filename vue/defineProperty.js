@@ -2,7 +2,7 @@
 Object.defineProperty(obj, prop, descriptor)
 // 要定义属性的对象。
 // 要定义或修改的属性的名称或 Symbol 
-// 要定义或修改的属性描述符
+// 要定义或修改的属性描述符 
 const object1 = {};
 
 Object.defineProperty(object1, 'property1', {
