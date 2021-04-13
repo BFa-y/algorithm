@@ -15,7 +15,23 @@ SQL 可以设置表、存储过程和视图的权限
 SELECT - 从数据库中提取数据
    SELECT column_name,column_name FROM table_name;  --根据字段查询
    SELECT * FROM table_name;                        --查全表
-   SELECT DISTINCT * FROM table_name                --返回唯一不同的值
+   SELECT DISTINCT * FROM table_name                --返回唯一不同的值，每行唯一
+   SELECT DISTINCT column_name,column_name FROM table_name; --返回唯一不同的字段
+
+   SELECT column_name,column_name FROM table_name
+   WHERE column_name operator value;                  --操作字段
+   WHERE operator = > < >= ,<=, !=,<> value;          --比较运算符
+
+   WHERE operator not、and、or value;                 --逻辑运算符
+   SELECT * FROM Websites WHERE country='CN' AND alexa > 50;
+   SELECT * FROM Websites WHERE country='USA' OR country='CN';
+
+   SELECT * FROM emp WHERE comm is null;              --空值判断
+   SELECT * FROM emp WHERE sal between 1500 and 3000; --between and (在 之间的值)
+   。。。。                                            --in
+                                                      --like模糊查询 
+   SELECT column_name,column_name FROM table_name
+     ORDER BY column_name,column_name ASC|DESC;       --默认升序 DESC关键字降序
 
 UPDATE - 更新数据库中的数据
 
