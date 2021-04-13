@@ -1,1 +1,1 @@
-![image](https://github.com/BFa-y/algorithm/blob/master/js/prototype/proto.jpg)
+![](https://github.com/BFa-y/algorithm/blob/master/js/prototype/proto.jpg)
