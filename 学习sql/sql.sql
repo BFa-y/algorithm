@@ -31,11 +31,16 @@ SELECT - 从数据库中提取数据
    。。。。                                            --in
                                                       --like模糊查询 
    SELECT column_name,column_name FROM table_name
-     ORDER BY column_name,column_name ASC|DESC;       --默认升序 DESC关键字降序
+     ORDER BY column_name,column_name ASC|DESC;       --默认ASC升序 DESC关键字降序
 
 UPDATE - 更新数据库中的数据
+   UPDATE table_name SET column1=value1 WHERE some_column=some_value;
+   UPDATE Websites  SET alexa='5000', country='USA'   --没有where指定时将更改所有数据
 
 DELETE - 从数据库中删除数据
+   DELETE FROM Websites 
+   WHERE name='xxxx' AND country='xxxx';              --删除匹配到的整行数据
+
 
 INSERT INTO - 向数据库中插入新数据
   INSERT INTO table_name (column1,column2,column3,...)
@@ -43,9 +48,20 @@ INSERT INTO - 向数据库中插入新数据
 
 CREATE DATABASE - 创建新数据库
 
+
 ALTER DATABASE - 修改数据库
+
+
 CREATE TABLE - 创建新表
+
+
 ALTER TABLE - 变更（改变）数据库表
+
+
 DROP TABLE - 删除表
+
+
 CREATE INDEX - 创建索引（搜索键）
+
+
 DROP INDEX - 删除索引
