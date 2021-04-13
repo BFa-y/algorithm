@@ -1,0 +1,1 @@
+![image](https://github.com/BFa-y/algorithm/blob/master/js/%E5%8E%9F%E5%9E%8B%E9%93%BE/proto.jpg)
