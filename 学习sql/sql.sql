@@ -41,7 +41,7 @@ DELETE - 从数据库中删除数据
    DELETE FROM Websites 
    WHERE name='xxxx' AND country='xxxx';              --删除匹配到的整行数据
 
-
+s
 INSERT INTO - 向数据库中插入新数据
   INSERT INTO table_name (column1,column2,column3,...)
   VALUES (value1,value2,value3,...);                --未插入字段NUll

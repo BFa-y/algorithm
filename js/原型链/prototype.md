@@ -1,1 +1,0 @@
-![原型链](https://github.com/BFa-y/algorithm/blob/master/js/prototype/proto.jpg)
